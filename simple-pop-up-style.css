@@ -1,0 +1,48 @@
+#simple-pop-up{
+    position:fixed;
+    width:20rem;
+    height:10rem;
+    background-color:rgba(255, 255, 255, 0.85);
+    right:-25rem;
+    bottom:10rem;
+    color:white;
+    padding:1rem;
+    text-align: center;
+    transition:all .5s ease;
+    z-index: 9999;
+}
+#simple-pop-up.hidden{
+    right:-25rem;
+}
+#simple-pop-up .simple-pop-up-close{
+    color: white;
+    background-color: grey;
+    display:block;
+    border-radius:1rem;
+    position:absolute;
+    top:0;
+    right:1rem;
+    cursor:pointer;
+    font-weight:lighter;
+    font-size:10px;
+    padding:.2rem .5rem;
+}
+#simple-pop-up .simple-pop-up-link{
+    color:white;
+    text-decoration: none;
+    background-image: linear-gradient(to top,#d60707,#e80707);
+    padding:1rem 2rem;
+    position:absolute;
+    top:50%;
+    right:3rem;
+    left:3rem;
+    transform: translateY(-50%);
+}
+#simple-pop-up .simple-pop-up-link:hover{
+    background-image: linear-gradient(to top,#d60000,#ff0000);
+}
+@media(max-width:800px){
+    #simple-pop-up{
+        right:0;
+    }
+}
